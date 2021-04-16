@@ -1,3 +1,11 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+api:
+    path: /MyApi
+    controller: App\Controller\DefaultController::api
+hello:
+    path: /hello/{name}
+    controller: App\Controller\DefaultController::helloToYou
+    defaults:
+        name: "Anonymous"
